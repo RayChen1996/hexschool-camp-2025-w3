@@ -1,0 +1,110 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 16px 0;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.main-nav {
+  display: flex;
+  gap: 48px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.pagination li {
+  list-style: none;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 15px 8px 15px;
+}
+
+.pagination li.active a {
+  background: #c0fa73;
+  color: #212529;
+}
+
+.member-promo {
+  background: #d8ff9c;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.member-promo button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 24px 0 24px 0;
+  padding: 12px 24px 12px 24px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.footer {
+  font-size: 14px;
+  color: #212529;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.footer span {
+  font-weight: bold;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.footer-top ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-top ul li a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 64px;
+}
+
+.footer-bottom p {
+  line-height: 1.5;
+}
