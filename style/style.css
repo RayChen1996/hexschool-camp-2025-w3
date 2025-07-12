@@ -1,110 +1,242 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Noto Sans TC", sans-serif;
-
-  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  padding: 0 1rem;
 }
-
-.header {
-  border-bottom: 1px solid #ddd;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0 16px 0;
-  max-width: 1296px;
-  margin: 0 auto;
-}
-.main-nav {
-  display: flex;
-  gap: 48px;
-}
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #000;
-}
-
-.pagination li {
-  list-style: none;
-}
-
-.pagination li a {
-  text-decoration: none;
-  color: #000;
-  padding: 8px 15px 8px 15px;
-}
-
-.pagination li.active a {
-  background: #c0fa73;
-  color: #212529;
-}
-
-.member-promo {
-  background: #d8ff9c;
-
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-.member-promo button {
-  background: #000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  margin: 24px 0 24px 0;
-  padding: 12px 24px 12px 24px;
-}
-
-.banner img {
+img {
+  vertical-align: middle; /* 移除圖片空隙 */
   width: 100%;
 }
 
-.footer {
-  font-size: 14px;
-  color: #212529;
-  max-width: 1296px;
+.container {
+  width: 100%;
+  max-width: 856px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+.brand {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem 1rem;
 }
 
-.footer span {
+.brand .divider {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.brand__intro {
+  gap: 1.5rem;
+}
+
+.brand__intro .brand__image {
+  width: 100%;
+}
+
+.brand__intro .brand__description {
+  flex: 1;
+}
+
+.brand__intro .brand__description h2 {
+  margin-bottom: 24px;
+  margin-top: 24px;
+  color: #212529;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.brand__intro .brand__description p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.brand__intro .brand__description strong {
+  color: #4c9b1f;
   font-weight: bold;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 64px;
+.brand__section {
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+.brand__section h3 {
+  color: #212529;
+  font-weight: 700;
+  font-size: 24px;
   margin-bottom: 24px;
 }
 
-.footer-top ul {
-  list-style: none;
-  display: flex;
-  gap: 16px;
+.brand__section ol {
+  padding-left: 20px;
 }
 
-.footer-top ul li a {
-  text-decoration: none;
-  color: #212529;
+.brand__section ol li {
+  list-style-type: disc;
 }
 
-.footer-bottom {
-  text-align: center;
-  color: #6c757d;
-  margin-bottom: 64px;
-}
-
-.footer-bottom p {
+.brand__section ul li {
+  margin-bottom: 0.75rem;
   line-height: 1.5;
+}
+
+.brand_list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid rgba(222, 226, 230, 1);
+  padding-left: 8px;
+}
+
+.brand__section ul li a {
+  color: #4c9b1f;
+  text-underline-offset: 8px;
+}
+
+.brand__section ul li a:hover {
+  text-decoration: underline;
+}
+
+.main_footer {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_footer p {
+  margin-top: 64px;
+  color: #6c757d;
+}
+.main_header {
+  background-image: url("../images/c7e2e0d7111d666be94562b6f4830973da8b0621.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 151px;
+  padding-bottom: 151px;
+  text-align: center;
+}
+.main_header h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.main_header h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-top: 16px;
+}
+.main_footer span {
+  margin-bottom: 64px;
+  font-style: 14px;
+  line-height: 1.5;
+  margin-top: 4px;
+  color: #6c757d;
+}
+
+.brand-box {
+  background-color: #f5fee7;
+  padding: 32px;
+  text-align: center;
+  margin: 64px 0 48px 0;
+}
+
+.brand-box h4 {
+  color: #57a203;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.brand-box div {
+  margin-top: 12px;
+}
+.brand-box p {
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .main_header {
+    padding: 100px 16px;
+    background-size: cover;
+  }
+
+  .main_header h1 {
+    font-size: 28px;
+  }
+
+  .main_header h3 {
+    font-size: 20px;
+  }
+
+  .brand__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .brand__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .brand__description h2 {
+    font-size: 20px;
+  }
+
+  .brand__section h3 {
+    font-size: 20px;
+  }
+
+  .brand_list li {
+    font-size: 16px;
+  }
+
+  .brand-box {
+    margin: 48px 0;
+    text-align: left;
+  }
+
+  .brand-box h4 {
+    font-size: 18px;
+  }
+
+  .main_footer p {
+    margin-top: 48px;
+    font-size: 14px;
+  }
+
+  .main_footer span {
+    margin-bottom: 48px;
+    font-size: 14px;
+  }
+
+  /* 設定列表內 SVG 與文字間距 */
+  .brand__section ul li a svg {
+    margin-right: 6px;
+  }
+
+  .brand__section ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  .brand__section ul li a {
+    display: flex;
+    align-items: center;
+  }
 }
